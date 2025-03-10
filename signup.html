@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Master - Sign Up</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <div id="auth-container">
+        <div class="auth-card">
+            <h2>Create Account</h2>
+            <form>
+                <div class="input-group">
+                    <label>User ID</label>
+                    <input type="text" required>
+                </div>
+                <div class="input-group">
+                    <label>Email</label>
+                    <input type="email" required>
+                </div>
+                <div class="input-group">
+                    <label>Password</label>
+                    <input type="password" required minlength="8">
+                </div>
+                <div class="input-group">
+                    <label>Full Name</label>
+                    <input type="text" required>
+                </div>
+                <div class="input-group">
+                    <label>Qualification</label>
+                    <select required>
+                        <option value="">Select</option>
+                        <option>High School</option>
+                        <option>Bachelor's Degree</option>
+                        <option>Master's Degree</option>
+                        <option>PhD</option>
+                    </select>
+                </div>
+                <div class="input-group">
+                    <label>Date of Birth</label>
+                    <input type="date" required>
+                </div>
+                <button type="submit" class="auth-btn">Sign Up</button>
+            </form>
+            <p>Already have an account? <a href="user login.html">Login here</a></p>
+        </div>
+    </div>
+</body>
+</html>

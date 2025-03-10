@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manage Subjects</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <div id="main">
+        <!-- Admin Navigation -->
+        <div id="nav">
+            <div id="navpart1">
+                <h2>Quiz Master Admin</h2>
+            </div>
+            <div id="navpart2">
+                <h2>Dashboard</h2> 
+                <h2>Subjects</h2> 
+                <h2>Analytics</h2>
+            </div>
+            <div id="navpart3">
+                <button>Logout</button>
+            </div>
+        </div>
+
+        <div class="admin-container">
+            <div class="admin-header">
+                <h3>Manage Subjects</h3>
+                <form class="subject-form" method="POST">
+                    <div class="form-group">
+                        <input type="text" name="subject_name" placeholder="New Subject Name" required>
+                        <button type="submit" class="add-btn">+ Add Subject</button>
+                    </div>
+                </form>
+            </div>
+
+            <div class="subject-list">
+                <div class="subject-card">
+                    <div class="subject-header">
+                        <h4>Physics</h4>
+                        <div class="subject-actions">
+                            <button class="edit-btn">Edit</button>
+                            <button class="delete-btn">Delete</button>
+                        </div>
+                    </div>
+                    <div class="chapter-list">
+                        <span class="chapter-count">3 Chapters</span>
+                    </div>
+                </div>
+
+                <div class="subject-card">
+                    <div class="subject-header">
+                        <h4>History</h4>
+                        <div class="subject-actions">
+                            <button class="edit-btn">Edit</button>
+                            <button class="delete-btn">Delete</button>
+                        </div>
+                    </div>
+                    <div class="chapter-list">
+                        <span class="chapter-count">2 Chapters</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

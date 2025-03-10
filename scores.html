@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Progress</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <div id="main">
+        <!-- Navigation -->
+        <div id="nav">
+            <div id="navpart1">
+                <h2>Quiz Master</h2>
+            </div>
+            <div id="navpart2">
+                <h2>Home</h2> 
+                <h2>Quizes</h2> 
+                <h2>Progress</h2>
+            </div>
+            <div id="navpart3">
+                <button>Logout</button>
+            </div>
+        </div>
+
+        <!-- Progress Section -->
+        <div class="progress-container">
+            <!-- Completed Quizzes -->
+            <div class="status-section">
+                <h3 class="section-title">Completed Quizzes</h3>
+                <div class="quiz-grid">
+                    <div class="quiz-card completed">
+                        <div class="quiz-status completed"></div>
+                        <img src="icon.png" alt="Geography">
+                        <h4>World Geography</h4>
+                        <p>Score: 85%</p>
+                        <div class="status-badge">Completed</div>
+                    </div>
+                    
+                    <div class="quiz-card completed">
+                        <div class="quiz-status completed"></div>
+                        <img src="icon.png" alt="Science">
+                        <h4>Basic Science</h4>
+                        <p>Score: 92%</p>
+                        <div class="status-badge">Completed</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Pending Quizzes -->
+            <div class="status-section">
+                <h3 class="section-title">Pending Quizzes</h3>
+                <div class="quiz-grid">
+                    <div class="quiz-card pending">
+                        <div class="quiz-status pending"></div>
+                        <img src="icon.png" alt="History">
+                        <h4>World History</h4>
+                        <p>Progress: 40%</p>
+                        <a href="#" class="continue-btn">Continue</a>
+                    </div>
+
+                    <div class="quiz-card pending">
+                        <div class="quiz-status pending"></div>
+                        <img src="icon.png" alt="Literature">
+                        <h4>English Literature</h4>
+                        <p>Progress: 20%</p>
+                        <a href="#" class="continue-btn">Continue</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

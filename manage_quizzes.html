@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manage Quizzes</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <div id="main">
+        <!-- Admin Navigation -->
+        <div id="nav">
+            <div id="navpart1">
+                <h2>Quiz Master Admin</h2>
+            </div>
+            <div id="navpart2">
+                <h2>Dashboard</h2> 
+                <h2>Quizzes</h2> 
+                <h2>Analytics</h2>
+            </div>
+            <div id="navpart3">
+                <button>Logout</button>
+            </div>
+        </div>
+
+        <div class="admin-container">
+            <div class="admin-header">
+                <h3>Manage Quizzes</h3>
+                <form class="quiz-form" method="POST">
+                    <div class="form-group">
+                        <select required>
+                            <option value="">Select Subject</option>
+                            <option>Physics</option>
+                            <option>History</option>
+                        </select>
+                        <select required>
+                            <option value="">Select Chapter</option>
+                            <option>Thermodynamics</option>
+                            <option>World War II</option>
+                        </select>
+                        <input type="text" name="quiz_title" placeholder="Quiz Title" required>
+                        <input type="number" name="duration" placeholder="Duration (minutes)" required>
+                        <button type="submit" class="add-btn">+ Create Quiz</button>
+                    </div>
+                </form>
+            </div>
+
+            <div class="quiz-list">
+                <div class="quiz-card">
+                    <div class="quiz-header">
+                        <h4>Basic Thermodynamics</h4>
+                        <div class="quiz-meta">
+                            <span class="subject-tag">Physics</span>
+                            <span class="duration">45 mins</span>
+                        </div>
+                    </div>
+                    <div class="quiz-actions">
+                        <button class="edit-btn">Edit</button>
+                        <button class="delete-btn">Delete</button>
+                        <button class="manage-btn">Manage Questions</button>
+                    </div>
+                </div>
+
+                <div class="quiz-card">
+                    <div class="quiz-header">
+                        <h4>World War II</h4>
+                        <div class="quiz-meta">
+                            <span class="subject-tag">History</span>
+                            <span class="duration">30 mins</span>
+                        </div>
+                    </div>
+                    <div class="quiz-actions">
+                        <button class="edit-btn">Edit</button>
+                        <button class="delete-btn">Delete</button>
+                        <button class="manage-btn">Manage Questions</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

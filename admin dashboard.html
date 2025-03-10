@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <div id="main">
+        <!-- Admin Navigation -->
+        <div id="nav">
+            <div id="navpart1">
+                <h2>Quiz Master Admin</h2>
+            </div>
+            <div id="navpart2">
+                <h2>Dashboard</h2> 
+                <h2>Users</h2> 
+                <h2>Analytics</h2>
+            </div>
+            <div id="navpart3">
+                <button>Logout</button>
+            </div>
+        </div>
+
+        <!-- Main Content -->
+        <div class="admin-container">
+            <div class="admin-header">
+                <h3>Manage Quizzes</h3>
+                <button class="add-btn">+ Add New Quiz</button>
+            </div>
+
+            <!-- Quiz Management Grid -->
+            <div class="grid-container">
+                <!-- Quiz Card 1 -->
+                <div class="admin-quiz-card">
+                    <div class="quiz-stats">
+                        <span class="stat attempts">142 Attempts</span>
+                        <span class="stat subject">Physics</span>
+                    </div>
+                    <h4 class="quiz-title">Basic Thermodynamics</h4>
+                    <div class="quiz-meta">
+                        <span class="date">Last updated: 2024-03-15</span>
+                        <div class="actions">
+                            <button class="edit-btn">Edit</button>
+                            <button class="delete-btn">Delete</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Quiz Card 2 -->
+                <div class="admin-quiz-card">
+                    <div class="quiz-stats">
+                        <span class="stat attempts">89 Attempts</span>
+                        <span class="stat subject">History</span>
+                    </div>
+                    <h4 class="quiz-title">World War II</h4>
+                    <div class="quiz-meta">
+                        <span class="date">Last updated: 2024-03-10</span>
+                        <div class="actions">
+                            <button class="edit-btn">Edit</button>
+                            <button class="delete-btn">Delete</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Add more quiz cards as needed -->
+            </div>
+        </div>
+    </div>
+</body>
+</html>
